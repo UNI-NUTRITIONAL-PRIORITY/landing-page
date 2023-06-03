@@ -1,0 +1,143 @@
+/* ?==========  Variables  ==========? */
+:root {
+  /* COLORS */
+  --main-color: #2ec98e;
+  --alt-main-color: #1f865f;
+  --button-text-color: #000;
+  --text-color: #1c2a29;
+  /* Background Gradiants */
+  --bg-1-color: #1e1c2a;
+  --bg-2-color: #1e1c2a;
+  /* Wave SVG Gradiants */
+  --wave-1-color: #ffffff;
+  /* FONTS */
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+}
+
+/* !=====  NO TOCAR ======! */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.background__animation {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  padding: 70px 15%;
+  color: var(--text-color);
+}
+
+/* POSICIONAMIENTO */
+.flex {
+  display: flex;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* !==================== CONTENIDO ====================!  */
+
+/* *===== MAGIPO ======* */
+/* ?===== HEADER ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* ?===== HOME ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* *===== ANA MARIA ======* */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* *===== BRIAN ======* */
+/* ?===== ABOUT US ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* *===== HITALO ======* */
+/* ?===== CONTACT ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* *===== WILLY ======* */
+/* ?===== LOGIN ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* ?===== REGISTER ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/* *===== MAGIPO ======* */
+/* ?===== FOOTER =====? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
