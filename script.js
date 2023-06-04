@@ -23,7 +23,7 @@ new BackgroundAnimation({
   },
   blending: "screen",
   opacity: {
-    center: 0.4,
+    center: 0.3,
     edge: 0,
   },
   skew: 0,
@@ -31,6 +31,31 @@ new BackgroundAnimation({
 });
 
 /* ?===== HEADER: MAGIPO ======? */
+// Activar y desactivar el menu de hamburguesa a partir de una clase
+let bar = document.querySelector(".bars"),
+  navItem = document.querySelector(".nav-items");
+
+bar.addEventListener("click", () => {
+  navItem.classList.toggle("active");
+});
+
+// Obtener la ruta actual de la página
+let currentPage = window.location.pathname.split("/").pop();
+
+// Encontrar el elemento li correspondiente a la página actual
+let activeLink = Array.from(document.querySelectorAll(".nav-link")).find(
+  function (link) {
+    return (
+      link.querySelector("a").getAttribute("href").split("/").pop() ===
+      currentPage
+    );
+  }
+);
+
+// Agregar la clase "active" al elemento li encontrado
+if (activeLink) {
+  activeLink.classList.add("active");
+}
 
 /* ?===== HOME: MAGIPO ======? */
 
