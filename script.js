@@ -18,7 +18,8 @@ new BackgroundAnimation({
     },
   },
   colors: {
-    background: "#1e1c2a",
+    // background: "#1e1c2a",
+    background: "#000000",
     particles: ["#2ec98e", "#ffb75c", "#2ec98e"],
   },
   blending: "screen",
@@ -31,40 +32,46 @@ new BackgroundAnimation({
 });
 
 /* ?===== HEADER: MAGIPO ======? */
-// MUESTRA U OCULTA ITEMS AL DARLE CLICK AL MENU DE HAMBURGUESA
-let burguer = document.querySelector(".bars"),
-  navItems = document.querySelector(".nav-items");
-
+// -------------------> MOSTRAR / OCULTAR ITEMS AL DARLE CLICK AL MENU DE HAMBURGUESA
+let burguer = document.querySelector(".bars");
+let navList = document.querySelector(".nav-list");
 burguer.addEventListener("click", () => {
-  navItems.classList.toggle("active");
+  navList.classList.toggle("active");
 });
 
-// PINTA DE OTRO COLOR EL ITEM CON LA RUTA QUE COINCIDA CON EL PATH ACTUAL
-// Obtiene la ruta actual de la página
-let currentPage = window.location.pathname.split("/").pop();
-// Encuentra el elemento li correspondiente a la página actual
-let activeLink = Array.from(document.querySelectorAll(".nav-link")).find(
-  function (link) {
-    return (
-      link.querySelector("a").getAttribute("href").split("/").pop() ===
-      currentPage
-    );
-  }
-);
-// Agregar la clase "active" al elemento li encontrado
-if (activeLink) {
-  activeLink.classList.add("active");
-}
+// -------------------> PINTA DE OTRO COLOR EL ITEM QUE COINCIDA CON LA RUTA DEL PATH ACTUAL
+// Obtiene el path actual de la página
+let currentPage = window.location.pathname.split("/").pop(); // Obtiene el path actual del usuario: "Path: /localhost/index.html" -> "Obtiene: index.html"
+let navItems = document.querySelectorAll(".nav-list .nav-item");
+let navButtons = document.querySelectorAll(".login-register .button_1");
 
-// -- HACER TRANSPARENTE Y DE COLOR EL NAVBAR CUANDO LLEGA A TOP = 0
+// Agrega la clase "active" al item que coincida con el path actual
+navItems.forEach((item) => {
+  let itemLink = item.querySelector(".nav-list .nav-item a");
+  let href = itemLink.getAttribute("href").split("/").pop(); // Obtiene el path de cada <a>
+  if (href === currentPage) {
+    item.classList.add("active"); // <li>
+    itemLink.classList.add("active"); // <a>
+  }
+});
+
+// Agrega la clase "active" al botón correspondiente a la página actual
+navButtons.forEach((item) => {
+  let href = item.getAttribute("href").split("/").pop();
+  if (href === currentPage) {
+    item.classList.add("active");
+  }
+});
+
+// -------------------> HACER TRANSPARENTE Y DE COLOR EL NAVBAR CUANDO LLEGA A TOP = 0
 // Obtener el elemento del navbar
 let navTransparent = document.getElementsByClassName("navbar-container")[0];
 // Función para cambiar el color del navbar
 function changeNavbarColor() {
   if (window.scrollY > 0) {
-    navTransparent.classList.add("transparent__color");
+    navTransparent.classList.add("navbar_color");
   } else {
-    navTransparent.classList.remove("transparent__color");
+    navTransparent.classList.remove("navbar_color");
   }
 }
 // Agregar un event listener para detectar el scroll
