@@ -63,9 +63,67 @@
   <main>
     <!-- FORM CONTACT -->
     <section class="section" id="formlogin">
-      <div>
-        <p>hola</p>
-      </div>
+      <!-- Contenido form register for client -->
+      <div class="register-users">
+        <div class="form-box">
+            <header class="Sing-in">Registrate como</header>
+            <div class="button-box">
+                <div  class="btn"></div>
+                <button type="button"  onclick='nutritional()' class="nutritional-btn">Nutricionista</button>
+                <button type="button"  onclick='user()' class="user-btn">Usuario</button>
+            </div>
+            <!-- formulario para el registro del Nutricionista class=nutritional probar en js -->
+            <form  class="nutritional input-group-register">
+                <input type="text" class="name input-field" placeholder="Nombres" required>
+                <input type="text" class="last-name input-field" placeholder="Apellido Paterno*" required>
+                <input type="text" class="last-name input-field" placeholder="Apellido Materno*" required> 
+                <!--label para el texto de fecha de nacimiento-->
+                <label for="date_of_birth">
+                    <span> Fecha de nacimiento </span>
+                    <input type="date" class="date_of_birth"  required>
+                    </label>
+                <input type="email" class="input-field" placeholder="Email" required> 
+                <!-- label que nos permite seleccionar el tipo de documento -->
+                <label for="type_document">
+                    <span> Tipo de documento </span>
+                    <select class="type_document" name="tipo de documento">
+                        <option value="DNI">DNI</option>
+                        <option value="carnet_extranjería">Carnet de Extranjeria</option>
+                    </select>
+                </label>
+                <input type="number" class="input-field" placeholder="Numero de documento" min="10000000" requiered>
+               
+                <input type="password" class="input-field password" placeholder="Contraseña" required>
+                <div class="input-eye">
+                    <input type="password" class="input-field password" placeholder="Repetir Contraseña" required>
+                    <i class="bi bi-eye-slash eye-icon"></i>
+                </div>
+
+                <input type='checkbox'class='check-box'><span class="span-check">Estoy de acuerdo con los terminos y condiciones</span>
+                <button type="submit" class="register-btn">Iniciar registro</button>
+            </form> 
+            <!-- formulario para el registro de usuario -->
+            <form class=" user input-group-register">
+                <input type="text" class="name input-field" placeholder="Nombres" required>
+                <input type="text" class="last-name input-field" placeholder="Apellido Paterno*" required>
+                <input type="text" class="last-name input-field" placeholder="Apellido Materno*" required> 
+                <label for="date_of_birth">
+                    <span> Fecha de nacimiento </span>
+                    <input type="date" class="date_of_birth"  required>
+                    </label>
+                <input type="email" class="input-field" placeholder="Email" required>
+
+                <input type="password" class="input-field password" placeholder="Contraseña" required>
+                <div class="input-eye">
+                    <input type="password" class="input-field password" placeholder="Repetir Contraseña" required>
+                    <i class="bi bi-eye-slash eye-icon"></i>
+                </div>
+
+                <input type='checkbox'class='check-box'><span class="span-check">Estoy de acuerdo con los terminos y condiciones</span>
+                <button type="submit" class="register-btn">Iniciar registro</button>
+            </form> 
+        </div>
+    </div>
     </section>
   </main>
 </body>
