@@ -62,10 +62,82 @@
   </header>
   <main>
     <!-- FORM CONTACT -->
-    <section class="section" id="formlogin">
-      <div>
-        <p>hola</p>
-      </div>
+    <section class="sectionlogin" id="formlogin">
+      <div class="form-login">
+        <header class="Sing-in">Iniciar Sesion como</header>
+        <div class="button-box">
+            <div  class="btn"></div>
+            <button type="button"  onclick='nutritional()' class="nutritional-btn">Nutricionista</button>
+            <button type="button"  onclick='user()' class="user-btn">Usuario</button>
+        </div>
+        <!-- formulario para el registro del Nutricionista class=nutritional probar en js -->
+        
+        <form  class="nutritional input-group-login">
+        <!--login with facebook, google, linkeding, apple-->
+            <div class="media-options">
+                <!--facebook-->
+                    <i class='bi bi-facebook facebook-icon'></i>
+                <!--google-->
+                    <i class='bi bi-google google-icon'></i>
+                <!--linkedin-->
+                    <i class='bi bi-linkedin linkedin-icon'></i>
+            </div>
+        <!--line-->
+        <div class="line"></div>
+
+            <input type="email" class="input-field" placeholder="Email" required>
+
+    
+            <div class="input-eye">
+                <input type="password" class="input-field password" placeholder="Contraseña" required>
+                <i class="bi bi-eye-slash eye-icon"></i>
+            </div>
+            
+            <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="register-btn">Iniciar registro</button>
+
+            <div class="form-link">
+                <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+            </div>
+
+        </form> 
+        <!-- formulario para el registro de usuario -->
+        <form class=" user input-group-login">
+            <!--login with facebook, google, linkeding, apple-->
+            <div class="media-options">
+                <!--facebook-->
+                    <i class='bi bi-facebook facebook-icon'></i>
+                <!--google-->
+                    <i class='bi bi-google google-icon'></i>
+                <!--linkedin-->
+                    <i class='bi bi-linkedin linkedin-icon'></i>
+            </div>
+        <!--line-->
+        <div class="line"></div>
+        
+            <input type="email" class="input-field" placeholder="Email" required>
+            
+            <div class="input-eye">
+                <input type="password" class="input-field password" placeholder="Contraseña" required>
+                <i class="bi bi-eye-slash eye-icon"></i>
+            </div>
+            
+
+            <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="register-btn">Iniciar registro</button>
+
+            <div class="form-link">
+                <span>Don't have an account? <a href="register.html" class="link signup-link">Signup</a></span>
+            </div>
+
+        </form> 
+    </div>
     </section>
   </main>
 </body>

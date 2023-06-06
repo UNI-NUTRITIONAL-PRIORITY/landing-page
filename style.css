@@ -366,6 +366,137 @@ main .section:nth-child(5) {
 @media (max-width: 400px) {}
 
 /* *===== WILLY ======* */
+/* ?===== REGISTER ======? */
+/* CONTENIDO */
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {}
+
+@media (max-width: 400px) {}
+
+/*CONTENIDO CSS REGISTER*/
+
+.Sing-in{
+  font-size: 28px;
+  font-weight: 600;
+  color: #232836;
+  text-align: center;
+}
+
+
+.form-box
+{
+top:150px;
+width: 430px;
+height: 580px;
+position: relative;
+margin: auto;
+background-color: #f5faf4;
+overflow: hidden;
+border-radius: 10px;
+
+}
+.button-box
+{
+width: 260px;
+margin:15px auto;
+position:relative;
+box-shadow: 0 0 20px 9px #ff61241f;
+border-radius: 25px;
+}
+
+.nutritional-btn, .user-btn
+{
+padding: 10px 20px;
+cursor: pointer;
+background-color: transparent;
+border:0;
+outline: none;
+position: relative;	
+}
+
+.form-box .button-box .btn{
+top:0;
+left:0;
+position: absolute;
+width: 130px;
+height: 100%;
+background: linear-gradient(to right, #ff105f,#ffad06);
+border-radius: 30px;
+transition: .5s;
+}
+
+.input-group-register{
+  top: 140px;
+  position: absolute;
+  width:370px;
+  transition: .5s;
+}
+
+.input-field
+{
+  width: 100%;
+  padding: 3px 0;
+  margin: 8px 0;/*espacio entre inputs*/
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+  outline: none;
+  background: transparent;
+  opacity: 0.60;
+}
+.input-field:hover
+{
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+}
+
+.register-btn{
+  width: 50%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+.register-btn:hover
+{
+  opacity: 1;
+}
+/*check box*/
+.check-box
+{
+margin: 10px 10px 30px 0;
+}
+/*son los espacios de los inputs del border del formulario*/
+.nutritional{
+  left: 30px;
+}
+
+.user{
+  left: 450px;
+}
+
+/*modificaciones en el formulario para apellido y nombre*/
+.last-name{
+  width: 176px;
+  margin-right: 6px;
+}
+
+/*modificaciones para el ojo*/
+/*input-eye aplica tanto para register y para login */
+.input-eye{
+  position: relative
+}
+
 /* ?===== LOGIN ======? */
 /* CONTENIDO */
 
@@ -377,16 +508,122 @@ main .section:nth-child(5) {
 
 @media (max-width: 400px) {}
 
-/* ?===== REGISTER ======? */
-/* CONTENIDO */
+/*CONTENIDO CSS LOGIN*/
+.sectionlogin{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
 
-@media (max-width: 1680px) {}
+.form-login
+{
+width: 430px;
+height: 450px;
+position: absolute;
+margin: auto;
+background-color: #f5faf4;
+overflow: hidden;
+border-radius: 10px;
+margin-top: 30px;
+}
 
-@media (max-width: 1024px) {}
+.form-login .button-box .btn{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 130px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+  border-radius: 30px;
+  transition: .5s;
+  }
+.input-group-login{
+  top: 100px;
+  position: absolute;
+  width:370px;
+  transition: .5s;   
+}
 
-@media (max-width: 650px) {}
 
-@media (max-width: 400px) {}
+.eye-icon{
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10px;/*espacio entre elementos entre elementos*/
+  margin-bottom: 10px; 
+}
+
+.form-link span,
+.form-link a{
+  font-weight: 400;
+  color: #232836;
+}
+
+.nutritional a{
+  color: #0171d3;
+  text-decoration: none;
+}
+
+.nutritional a:hover{
+
+  text-decoration: underline;
+}
+
+.user a{
+  color: #0171d3;
+  text-decoration: none;
+}
+
+.user a:hover{
+  text-decoration: underline;
+}
+
+/*para los iconos de google y facebook*/
+.line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin:10px 0;
+  background-color: #d4d4d4;
+}
+
+.line::before{
+  content: 'Or';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5faf4;
+  color: #8b8b8b;
+  padding: 0 15px;
+}
+
+.media-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+} 
+
+.facebook-icon, .google-icon, .linkedin-icon{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+}
 
 /* *===== MAGIPO ======* */
 /* ?===== FOOTER =====? */
