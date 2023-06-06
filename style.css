@@ -2,12 +2,15 @@
 :root {
   /* COLORS */
   --main-color: #2ec78c;
-  --alt-main-color: #2ab17d;
+  --alt-main-color: #3bc48f;
   --button-text-color: #000;
-  --text-color: #ffffff;
+  --text-color: #fff;
   /* FONTS */
   --big-font: 5rem;
-  --h2-font: 2.25rem;
+  --h1-font: 2rem;
+  --h2-font: 2rem;
+  --h3-font: 1.2rem;
+  --h4-font: .8rem;
   /* NAVBAR */
   --navbar-color: rgb(0, 0, 0);
   --nav-height: 90px;
@@ -16,9 +19,11 @@
   --section-1-color: transparent;
   --section-2-color: transparent;
   --section-3-color: #1D1D1D;
-  --section-4-color: #212121;
-  --section-5-color: transparent;
+  --section-4-color: transparent;
+  --section-5-color: #212121;
   --section-6-color: #1D1D1D;
+  /* FOOTER */
+  --footer-color: #121212;
 }
 
 /* !=====  NO TOCAR ======! */
@@ -35,42 +40,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* SCROLL */
-
-:target {
-  scroll-margin-top: 90px;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--alt-main-color);
-}
-
 .background_animation {
   background: var(--bg-1-color);
   width: 100%;
   height: 100%;
-}
-
-.section {
-  padding: var(--section-height) 15%;
-  color: var(--text-color);
-}
-
-.section div {
-  padding: 0;
 }
 
 /* POSICIONAMIENTO */
@@ -84,6 +57,40 @@ html {
   align-content: center;
 }
 
+/* SCROLL */
+
+:target {
+  scroll-margin-top: 90px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--alt-main-color);
+}
+
+body.scrollbar-top::-webkit-scrollbar-thumb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+body.scrollbar-bottom::-webkit-scrollbar-thumb {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 /* NAVBAR */
 .navbar_transparent {
   background: transparent;
@@ -94,6 +101,23 @@ html {
 }
 
 /* SECTIONS */
+
+.section {
+  padding: var(--section-height) 15%;
+  color: var(--text-color);
+}
+
+.section_title {
+  color: var(--main-color);
+}
+
+.section_subtitle {
+  color: var(--alt-main-color);
+}
+
+.section div {
+  padding: 0;
+}
 
 main .section:nth-child(1) {
   background: var(--section-1-color);
@@ -123,240 +147,20 @@ main .section:nth-child(6) {
 
 /* *===== MAGIPO ======* */
 /* ?===== HEADER ======? */
-.navbar-container {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 2rem;
-  height: var(--nav-height);
-  align-items: center;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: background .5s ease;
-}
-
-.logo-container a {
-  font-size: 2rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 500;
-  font-family: 'Kanit', sans-serif;
-  text-decoration: none;
-  transition: all .5s ease;
-}
-
-.logo-container a:hover {
-  color: var(--main-color);
-  transform: scale(1);
-}
-
-.navbar-container .nav-list {
-  display: flex;
-  list-style-type: none;
-  gap: 2rem;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-container .nav-list .nav-item a {
-  color: #fff;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  padding: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navbar-container .nav-list .nav-item:after {
-  display: block;
-  content: "";
-  border-top: 2px solid var(--main-color);
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  -webkit-transition: transform 250ms ease-in-out;
-  -moz-transition: transform 250ms ease-in-out;
-  -ms-transition: transform 250ms ease-in-out;
-  -o-transition: transform 250ms ease-in-out;
-}
-
-.navbar-container .nav-list .nav-item:hover:after {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-}
-
-.navbar-container .nav-list .nav-item a:hover {
-  filter: brightness(80%);
-  -webkit-filter: brightness(80%);
-}
-
-.navbar-container .nav-list .login-register {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-/* BURGUER MENU */
-
-.navbar-container .nav-list.active {
-  right: 0;
-}
-
-/* LINK ACTIVO */
-
-.navbar-container .nav-item.active a {
-  color: var(--main-color);
-  font-weight: 500;
-}
-
-.login-register .button_1.active {
-  background: var(--main-color);
-  color: var(--button-text-color);
-}
-
-/*SUBMENU*/
-
-.nav-sublist {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transition: all ease 0.5s;
-  list-style: none;
-}
-
-.nav-item:hover .nav-sublist {
-  padding: 20px 0 0 0;
-  opacity: 1;
-  visibility: visible;
-}
-
-.nav-sublist .nav-subitem {
-  margin: 0;
-  width: 100%;
-}
-
-.nav-sublist .nav-subitem:nth-child(n) a {
-  color: var(--text-color);
-  background: var(--bg-1-color);
-  padding: 10px 20px 10px 10px;
-  font-size: .9rem;
-}
-
-.nav-sublist .nav-subitem a:hover {
-  color: var(--main-color);
-}
-
-.nav-sublist .nav-subitem a {
-  width: 100%;
-  display: inline-block;
-  background: transparent;
-}
-
-.nav-sublist .nav-subitem:first-child a {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.nav-sublist .nav-subitem:last-child a {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.navbar-separator {
-  height: var(--nav-height);
-}
 
 @media (max-width: 1680px) {}
 
-@media (max-width: 1024px) {
-  .navbar-container {
-    padding: 0 1rem;
-  }
+@media (max-width: 1024px) {}
 
-  .navbar-container .nav-list {
-    gap: 1rem;
-  }
-
-  .nav-list .nav-item a,
-  .button_1 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .navbar-container {
-    justify-content: space-between;
-    background: var(--bg-1-color);
-  }
-
-  .navbar-container .nav-list {
-    flex-direction: column;
-    position: fixed;
-    top: 70px;
-    width: 100vw;
-    background: var(--bg-1-color);
-    padding: 3rem 0;
-    height: 100vh;
-    z-index: 99;
-    right: -100%;
-    transition: 0.2s ease-in;
-    -webkit-transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-in;
-    -ms-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-  }
-
-  .bars {
-    height: auto;
-    width: 22px;
-    cursor: pointer;
-  }
-
-  .bars .bar {
-    height: 2px;
-    width: 100%;
-    background: #fff;
-    margin: 4px;
-  }
-
-  .navbar-container .nav-list {
-    gap: 3rem;
-  }
-
-  .navbar-container .nav-list .login-register {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-    width: 50%;
-  }
-
-  .login-register .button_1 {
-    padding: 1rem 0;
-  }
-}
+@media (max-width: 650px) {}
 
 @media (max-width: 400px) {}
 
+/* *===== MAGIPO ======* */
 /* ?===== HOME ======? */
-
-/* main .section:nth-child(2) {
+/* #home {
   min-height: 850px;
 } */
-
 
 @media (max-width: 1680px) {}
 
@@ -367,7 +171,7 @@ main .section:nth-child(6) {
 @media (max-width: 400px) {}
 
 /* *===== ANA MARIA ======* */
-/* CONTENIDO */
+/* ?===== HOME ======? */
 
 @media (max-width: 1680px) {}
 
@@ -379,7 +183,6 @@ main .section:nth-child(6) {
 
 /* *===== BRIAN ======* */
 /* ?===== ABOUT US ======? */
-/* CONTENIDO */
 
 @media (max-width: 1680px) {}
 
@@ -391,7 +194,6 @@ main .section:nth-child(6) {
 
 /* *===== HITALO ======* */
 /* ?===== CONTACT ======? */
-/* CONTENIDO */
 
 @media (max-width: 1680px) {}
 
@@ -403,7 +205,9 @@ main .section:nth-child(6) {
 
 /* *===== WILLY ======* */
 /* ?===== LOGIN ======? */
-/* CONTENIDO */
+/* #formlogin {
+  min-height: 850px;
+} */
 
 @media (max-width: 1680px) {}
 
@@ -414,7 +218,9 @@ main .section:nth-child(6) {
 @media (max-width: 400px) {}
 
 /* ?===== REGISTER ======? */
-/* CONTENIDO */
+/* #formregister {
+  min-height: 850px;
+} */
 
 @media (max-width: 1680px) {}
 
@@ -426,12 +232,12 @@ main .section:nth-child(6) {
 
 /* *===== MAGIPO ======* */
 /* ?===== FOOTER =====? */
-.footer {
+/* .footer {
   background: var(--text-color);
   color: var(--text-color);
   height: 250px;
   position: relative;
-}
+} */
 
 @media (max-width: 1680px) {}
 
