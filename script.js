@@ -30,6 +30,25 @@ new BackgroundAnimation({
   skew: 0,
   shapes: ["s"],
 });
+// CAMBIA EL BORDE DEL SCROLL AL LLEGAR A TOP=0 O TOP=100%
+window.addEventListener("scroll", function () {
+  var body = document.querySelector("body");
+
+  if (window.scrollY === 0) {
+    body.classList.add("scrollbar-top");
+  } else {
+    body.classList.remove("scrollbar-top");
+  }
+
+  if (
+    window.scrollY ===
+    document.documentElement.scrollHeight - window.innerHeight
+  ) {
+    body.classList.add("scrollbar-bottom");
+  } else {
+    body.classList.remove("scrollbar-bottom");
+  }
+});
 
 /* ?===== HEADER: MAGIPO ======? */
 // -------------------> PINTA DE OTRO COLOR EL ITEM QUE COINCIDA CON LA RUTA DEL PATH ACTUAL
