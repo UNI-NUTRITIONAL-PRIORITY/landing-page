@@ -1,7 +1,7 @@
 /* !===== NO TOCAR (BACKGROUND) ======! */
 // BACKGROUND
 new BackgroundAnimation({
-  count: 100,
+  count: 300,
   size: {
     min: 2,
     max: 8,
