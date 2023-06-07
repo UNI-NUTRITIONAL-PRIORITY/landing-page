@@ -1,0 +1,181 @@
+/* ?==========  Variables  ==========? */
+:root {
+  /* COLORS */
+  --main-color: #2ec78c;
+  --alt-main-color: #3bc48f;
+  --button-text-color: #000;
+  --text-color: #fff;
+  --bg-1-color: #000;
+  /* FONTS */
+  --big-font: 5rem;
+  --h1-font: 2rem;
+  --h2-font: 2rem;
+  --h3-font: 1.2rem;
+  --h4-font: .8rem;
+  /* NAVBAR */
+  --navbar-color: rgb(0, 0, 0);
+  --nav-height: 90px;
+  --nav-separator: 0;
+  /* SECTIONS */
+  --section-height: 80px;
+  --section-1-color: transparent;
+  --section-2-color: transparent;
+  --section-3-color: #1D1D1D;
+  --section-4-color: transparent;
+  --section-5-color: #212121;
+  --section-6-color: #1D1D1D;
+  /* FOOTER */
+  --footer-color: #cacaca;
+}
+
+/* !=====  NO TOCAR ======! */
+
+/* BASIC */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.background_animation {
+  background: var(--bg-1-color);
+  width: 100%;
+  height: 100%;
+}
+
+/* POSICIONAMIENTO */
+.flex {
+  display: flex;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* SCROLL */
+
+:target {
+  scroll-margin-top: 90px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--alt-main-color);
+}
+
+body.scrollbar-top::-webkit-scrollbar-thumb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+body.scrollbar-bottom::-webkit-scrollbar-thumb {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* NAVBAR */
+.navbar_transparent {
+  background: transparent;
+}
+
+.navbar_color {
+  background: var(--navbar-color)
+}
+
+.navbar_separator {
+  height: var(--nav-separator);
+}
+
+/* SECTIONS */
+
+.section {
+  padding: var(--section-height) 15%;
+  color: var(--text-color);
+}
+
+.section_title {
+  color: var(--main-color);
+}
+
+.section_subtitle {
+  color: var(--alt-main-color);
+}
+
+.section div {
+  padding: 0;
+}
+
+main .section:nth-child(1) {
+  background: var(--section-1-color);
+}
+
+main .section:nth-child(2) {
+  background: var(--section-2-color);
+  padding: var(--section-height) 0;
+}
+
+main .section:nth-child(3) {
+  background: var(--section-3-color);
+}
+
+main .section:nth-child(4) {
+  background: var(--section-4-color);
+}
+
+main .section:nth-child(5) {
+  background: var(--section-5-color);
+}
+
+main .section:nth-child(6) {
+  background: var(--section-6-color);
+}
+
+/* COLORES */
+.color_main {
+  color: var(--main-color);
+}
+
+/* !==================== CONTENIDO ====================!  */
+
+/* *===== MAGIPO ======* */
+/* ?===== HEADER ======? */
+
+/* *===== MAGIPO ======* */
+/* ?===== HOME ======? */
+
+/* *===== ANA MARIA ======* */
+/* ?===== HOME ======? */
+
+/* *===== BRIAN ======* */
+/* ?===== ABOUT US ======? */
+
+/* *===== HITALO ======* */
+/* ?===== CONTACT ======? */
+
+/* *===== WILLY ======* */
+/* ?===== LOGIN ======? */
+
+/* ?===== REGISTER ======? */
+
+/* *===== MAGIPO ======* */
+/* ?===== FOOTER =====? */
