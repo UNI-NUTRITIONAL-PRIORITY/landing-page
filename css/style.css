@@ -714,7 +714,7 @@ main .section:nth-child(6) {
 
 .resume-img {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .resume-img img {
@@ -915,7 +915,7 @@ main .section:nth-child(6) {
 /* ?===== FOOTER =====? */
 
 .footer {
-  background: var(--bg-1-color);
+  background: #111111;
   color: var(--footer-color);
   padding: 3%;
   display: flex;
