@@ -15,7 +15,7 @@
   /* NAVBAR */
   --navbar-color: rgb(0, 0, 0);
   --nav-height: 90px;
-  --nav-separator: 0;
+  --nav-separator: 90px;
   /* SECTIONS */
   --section-height: 80px;
   --section-1-color: transparent;
@@ -338,11 +338,24 @@ main .section:nth-child(6) {
   transform: scaleY(1);
 }
 
+.navbar-separator {
+  height: var(--nav-separator);
+}
+
 @media (max-width: 1680px) {}
 
 @media (max-width: 1024px) {
+
+  :root {
+    --nav-separator: 40px;
+  }
+
   .navbar-container {
     padding: 0 1rem;
+  }
+
+  .home-container .home-info:nth-child(2) {
+    margin-top: 30px;
   }
 
   .navbar-container .nav-list {
@@ -473,26 +486,37 @@ main .section:nth-child(6) {
   .nav-sublist {
     display: none;
   }
+
+  /* BOTONES */
+
+  .home-info_buttons .download-img {
+    margin: 0 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0px 0px 40px -10px var(--main-color);
+  }
+
+  .home-info_buttons .download-img:hover {
+    border: 2px solid var(--text-color);
+    box-shadow: 0px 0px 40px -10px var(--text-color);
+  }
 }
 
 /* *===== MAGIPO ======* */
 /* ?===== HOME ======? */
 #home {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
-  min-height: 900px;
+  align-items: center;
+  min-height: 850px;
 }
 
 .home-container {
   width: 800px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .home-container .home-info {
-  margin: 30px;
+  margin: 0 30px;
   text-align: center;
 }
 
@@ -540,6 +564,7 @@ main .section:nth-child(6) {
   #home {
     margin-top: 0;
     display: block;
+    min-height: 890px;
   }
 
   .home-container {
@@ -548,7 +573,13 @@ main .section:nth-child(6) {
     flex-direction: column;
     justify-content: center;
   }
+
+  .home-img {
+    max-width: 520px;
+  }
 }
+
+@media (max-width: 650px) {}
 
 /* *===== ANA MARIA ======* */
 /* ?===== HOME ======? */
@@ -669,9 +700,21 @@ main .section:nth-child(6) {
   align-items: center;
 }
 
+.resume-text {
+  margin: 2rem 0 2rem 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resume-text p {
+  display: flex;
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
+}
+
 .resume-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .resume-img img {
@@ -680,18 +723,8 @@ main .section:nth-child(6) {
   height: auto;
 }
 
-.resume-text {
-  margin: 2rem 5%;
-}
-
 .resume-img {
   margin: 0 5%;
-}
-
-.resume-text p {
-  display: flex;
-  margin: 0.8rem 0 1.8rem;
-  line-height: 1.7;
 }
 
 /* VALUES AND CULTURES */
