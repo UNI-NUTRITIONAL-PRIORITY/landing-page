@@ -654,6 +654,221 @@ main .section:nth-child(6) {
 
 /* *===== BRIAN ======* */
 /* ?===== ABOUT US ======? */
+/* RESUME */
+.resume,
+.vac,
+.dev {
+  color: var(--text-color);
+}
+
+.resume,
+.vac {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.resume-img {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-img img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+.resume-text {
+  margin: 2rem 5%;
+}
+
+.resume-img {
+  margin: 0 5%;
+}
+
+.resume-text p {
+  display: flex;
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
+}
+
+/* VALUES AND CULTURES */
+.vac {
+  grid-gap: 3rem;
+}
+
+.vac__title {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.vac__item {
+  margin: 10px 0;
+}
+
+.vac-img {
+  flex-direction: column;
+}
+
+.vac-img img {
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+}
+
+.vac-img img:nth-child(1) {
+  align-self: flex-start;
+}
+
+.vac-img img:nth-child(2) {
+  align-self: flex-end;
+}
+
+.vac-text {
+  flex-direction: column;
+}
+
+/* DEVELOPMENT TEAM */
+.dev__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+  grid-gap: 1rem;
+  margin-top: 4rem;
+}
+
+.box {
+  background: var(--section-3-color);
+  text-align: center;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.box-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.box h3 {
+  margin: -5px 0 15px;
+  color: var(--main-color);
+  font-size: var(--h3-font);
+}
+
+.box h4 {
+  margin: 15px 0 15px;
+  color: #bbbbbb;
+  font-size: var(--h4-font);
+}
+
+.box-desc {
+  line-height: 1.7;
+  color: var(--text-color);
+  font-size: var(--h3-font);
+  padding: 10px 15px;
+}
+
+.box-desc {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.heading h2 {
+  font-size: var(--h2-font);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1560px) {
+  :root {
+    --big-font: 3.5rem;
+    --h2-font: 2rem;
+  }
+}
+
+@media (max-width: 1350px) {
+
+  .home,
+  .resume {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .resume-img {
+    order: 2;
+  }
+
+  .resume .button {
+    margin-bottom: 30px;
+  }
+
+  section {
+    padding: 100px 7%;
+  }
+}
+
+@media (max-width: 1140px) {
+  section {
+    padding: 50px 8%;
+  }
+
+  .vac {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .vac-img {
+    order: 2;
+  }
+
+  .vac {
+    grid-gap: 1.5rem;
+  }
+
+  .vac-img {
+    align-items: center;
+  }
+}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 720px) {
+
+  .home,
+  .resume {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .resume-img {
+    order: 2;
+  }
+
+  .resume .button {
+    margin-bottom: 30px;
+  }
+
+  section {
+    padding: 100px 7%;
+  }
+}
+
+@media (max-width: 555px) {
+  .col {
+    width: 100%;
+  }
+}
 
 /* *===== HITALO ======* */
 /* ?===== CONTACT ======? */
