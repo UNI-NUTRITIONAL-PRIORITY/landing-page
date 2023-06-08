@@ -1,7 +1,7 @@
 /* !===== NO TOCAR (BACKGROUND) ======! */
 // BACKGROUND
 new BackgroundAnimation({
-  count: 100,
+  count: 300,
   size: {
     min: 2,
     max: 8,
@@ -32,11 +32,19 @@ new BackgroundAnimation({
 });
 
 /* ?===== HEADER: MAGIPO ======? */
+// -------------------> MOSTRAR / OCULTAR ITEMS AL DARLE CLICK AL MENU DE HAMBURGUESA
+let burguer = document.querySelector(".bars");
+let navList = document.querySelector(".nav-list");
+burguer.addEventListener("click", () => {
+  navList.classList.toggle("active");
+});
+
 // -------------------> PINTA DE OTRO COLOR EL ITEM QUE COINCIDA CON LA RUTA DEL PATH ACTUAL
 // Obtiene el path actual de la página
 let currentPage = window.location.pathname.split("/").pop(); // Obtiene el path actual del usuario: "Path: /localhost/index.html" -> "Obtiene: index.html"
 let navItems = document.querySelectorAll(".nav-list .nav-item");
 let navButtons = document.querySelectorAll(".login-register .button_1");
+
 // Agrega la clase "active" al item que coincida con el path actual
 navItems.forEach((item) => {
   let itemLink = item.querySelector(".nav-list .nav-item a");
@@ -46,6 +54,7 @@ navItems.forEach((item) => {
     itemLink.classList.add("active"); // <a>
   }
 });
+
 // Agrega la clase "active" al botón correspondiente a la página actual
 navButtons.forEach((item) => {
   let href = item.getAttribute("href").split("/").pop();

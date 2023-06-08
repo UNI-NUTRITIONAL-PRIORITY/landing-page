@@ -30,19 +30,21 @@
 /* !=== BOTON 2 ===! */
 
 /* EJEMPLO HTML */
-/* <a href="#" class="button_2">
+/*
+<a href="#" class="button_2">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
     Boton 2
-</a> */
+</a>
+*/
 
 .button_2 {
     margin: 5px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -51,6 +53,7 @@
     color: #2ec98e;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 1;
 }
 
 .button_2:hover {
@@ -148,4 +151,57 @@
     }
 }
 
-/* !=== BOTON 2 ===! */
+/* !=== COMBOBOX ===! */
+
+.combobox {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 0 200px;
+    width: 100%;
+    max-width: 15vw;
+    padding-right: 24px;
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"14" height%3D"14" viewBox%3D"0 0 14 14"%3E%3Cpath fill%3D"%23999" d%3D"M0 4l6 6 6-6z"%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.combobox:hover {
+    outline: none;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"14" height%3D"14" viewBox%3D"0 0 14 14"%3E%3Cpath fill%3D"%232ec78c" d%3D"M0 4l6 6 6-6z"%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+}
+
+.combobox:focus {
+    outline: none;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"14" height%3D"14" viewBox%3D"0 0 14 14"%3E%3Cpath fill%3D"%232ec78c" d%3D"M0 4l6 6 6-6z"%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+}
+
+.combobox option {
+    color: #000;
+}
+
+/* TEXT HOVER */
+.color_hover {
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+
+.color_hover:hover {
+    color: var(--main-color);
+}
+
+/* BORDER HOVER */
+
+.border_hover {
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+
+.border_hover:hover {
+    border-color: var(--main-color);
+}
