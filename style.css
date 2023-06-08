@@ -49,6 +49,7 @@ html {
 }
 
 /* POSICIONAMIENTO */
+
 .flex {
   display: flex;
 }
@@ -94,12 +95,14 @@ body.scrollbar-bottom::-webkit-scrollbar-thumb {
 }
 
 /* NAVBAR */
+
 .navbar_transparent {
   background: transparent;
 }
 
 .navbar_color {
-  background: var(--navbar-color)
+  background: var(--navbar-color);
+  box-shadow: 0px 0px 100px -30px var(--text-color);
 }
 
 .navbar_separator {
@@ -151,6 +154,7 @@ main .section:nth-child(6) {
 }
 
 /* COLORES */
+
 .color_main {
   color: var(--main-color);
 }
@@ -159,17 +163,20 @@ main .section:nth-child(6) {
 
 /* *===== MAGIPO ======* */
 /* ?===== HEADER ======? */
+
 .navbar-container {
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  z-index: 10;
   padding: 0 2rem;
   height: var(--nav-height);
   align-items: center;
   color: #fff;
-  position: fixed;
   top: 0;
   width: 100%;
-  transition: background .5s ease;
+  transition: shadow .5s ease;
+  transition: background .5s ease, box-shadow .35s ease;
 }
 
 .logo-container a .logo {
@@ -468,14 +475,6 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
-
 /* *===== MAGIPO ======* */
 /* ?===== HOME ======? */
 #home {
@@ -491,8 +490,6 @@ main .section:nth-child(6) {
   flex-direction: column;
   justify-content: center;
 }
-
-.home-container:nth-child(1) {}
 
 .home-container .home-info {
   margin: 30px;
@@ -539,8 +536,6 @@ main .section:nth-child(6) {
   border-radius: 10px;
 }
 
-@media (max-width: 1680px) {}
-
 @media (max-width: 1024px) {
   #home {
     margin-top: 0;
@@ -555,13 +550,8 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
-
 /* *===== ANA MARIA ======* */
 /* ?===== HOME ======? */
-/* TESTIMONIALS */
 
 #testimonials {
   display: flex;
@@ -639,10 +629,6 @@ main .section:nth-child(6) {
   color: yellow;
 }
 
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
 @media (max-width: 650px) {
 
   .testimonials-title {
@@ -666,56 +652,16 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 400px) {}
-
 /* *===== BRIAN ======* */
 /* ?===== ABOUT US ======? */
-
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
 
 /* *===== HITALO ======* */
 /* ?===== CONTACT ======? */
 
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
-
 /* *===== WILLY ======* */
 /* ?===== LOGIN ======? */
-/* #formlogin {
-  min-height: 850px;
-} */
-
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
 
 /* ?===== REGISTER ======? */
-/* #formregister {
-  min-height: 850px;
-} */
-
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 650px) {}
-
-@media (max-width: 400px) {}
 
 /* *===== MAGIPO ======* */
 /* ?===== FOOTER =====? */
@@ -804,10 +750,6 @@ main .section:nth-child(6) {
   text-align: center;
 }
 
-@media (max-width: 1680px) {}
-
-@media (max-width: 1024px) {}
-
 @media (max-width: 650px) {
 
   .footer-container {
@@ -828,4 +770,26 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 400px) {}
+.home-info {
+  z-index: 0;
+}
+
+.home-img {
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+  z-index: -10;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
