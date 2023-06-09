@@ -48,16 +48,19 @@ html {
   height: 100%;
 }
 
-/* POSICIONAMIENTO */
+/* POSICIONAMIENTO CENTRAL */
 
 .flex {
   display: flex;
-}
-
-.flex_center {
-  display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1.5rem;
+  align-items: center;
 }
 
 /* SCROLL */
@@ -685,19 +688,16 @@ main .section:nth-child(6) {
 
 /* *===== BRIAN ======* */
 /* ?===== ABOUT US ======? */
+
 /* RESUME */
-.resume,
-.vac,
-.dev {
+#resume,
+#vac,
+#dev {
   color: var(--text-color);
 }
 
-.resume,
-.vac {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-gap: 1.5rem;
-  align-items: center;
+#resume {
+  grid-gap: 0;
 }
 
 .resume-text {
@@ -721,6 +721,7 @@ main .section:nth-child(6) {
   max-width: 100%;
   width: 400px;
   height: auto;
+  border-radius: 20px;
 }
 
 .resume-img {
@@ -728,8 +729,8 @@ main .section:nth-child(6) {
 }
 
 /* VALUES AND CULTURES */
-.vac {
-  grid-gap: 3rem;
+#vac {
+  grid-gap: 5rem;
 }
 
 .vac__title {
@@ -743,12 +744,16 @@ main .section:nth-child(6) {
 
 .vac-img {
   flex-direction: column;
+  margin: 15px;
+  border-radius: 10px;
 }
 
 .vac-img img {
   max-width: 100%;
   width: 340px;
   height: auto;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .vac-img img:nth-child(1) {
@@ -757,6 +762,7 @@ main .section:nth-child(6) {
 
 .vac-img img:nth-child(2) {
   align-self: flex-end;
+  height: 250px;
 }
 
 .vac-text {
@@ -783,6 +789,7 @@ main .section:nth-child(6) {
   height: 150px;
   border-radius: 50%;
   margin: 20px 0;
+  object-fit: cover;
 }
 
 .box h3 {
@@ -828,6 +835,11 @@ main .section:nth-child(6) {
     --big-font: 3.5rem;
     --h2-font: 2rem;
   }
+
+  .resume-text {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -836,6 +848,10 @@ main .section:nth-child(6) {
   .resume {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .resume-text {
+    margin: 2rem 10%;
   }
 
   .resume-img {
