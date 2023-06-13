@@ -1171,6 +1171,16 @@ main .section:nth-child(6) {
   position: relative
 }
 
+@media (max-width: 460px) {
+  .form-login {
+    width: 380px;
+  }
+
+  .form-box {
+    width: 380px;
+  }
+}
+
 /* *===== MAGIPO ======* */
 /* ?===== FOOTER =====? */
 
