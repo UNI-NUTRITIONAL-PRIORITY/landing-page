@@ -85,8 +85,41 @@ window.addEventListener("scroll", changeNavbarColor);
 
 /* ?===== CONTACT: HITALO ======? */
 
-/* ?===== LOGIN: WILLY ======? */
+/* ?===== REGISTER AND LOGIN: WILLY ======? */
+const forms = document.querySelector(".formlogin"),
+  pwShowHide = document.querySelectorAll(".eye-icon"),
+  links = document.querySelectorAll(".link");
 
-/* ?===== REGISTER: WILLY ======? */
+pwShowHide.forEach((eyeIcon) => {
+  eyeIcon.addEventListener("click", () => {
+    let pwFields =
+      eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+    pwFields.forEach((password) => {
+      if (password.type === "password") {
+        password.type = "text";
+        eyeIcon.classList.replace("bi-eye-slash", "bi-eye");
+        return;
+      }
+      password.type = "password";
+      eyeIcon.classList.replace("bi-eye", "bi-eye-slash");
+    });
+  });
+});
+
+// ? script del formulario de registro
+let x = document.querySelector(".nutritional");
+let y = document.querySelector(".user");
+let z = document.querySelector(".btn");
+function user() {
+  x.style.left = "-450px";
+  y.style.left = "30px";
+  z.style.left = "130px";
+}
+function nutritional() {
+  x.style.left = "30px";
+  y.style.left = "450px";
+  z.style.left = "0px";
+}
 
 /* ?===== FOOTER: MAGIPO =====? */
