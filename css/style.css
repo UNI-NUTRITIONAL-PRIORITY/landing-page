@@ -2,9 +2,10 @@
 :root {
   /* COLORS */
   --main-color: #2ec78c;
-  --alt-main-color: #3bc48f;
-  --button-text-color: #000;
-  --text-color: #fff;
+  --main-2-color: #3bc48f;
+  --main-3-color: #79ebdb;
+  --text-1-color: #fff;
+  --text-2-color: #000;
   --bg-1-color: #000;
   /* FONTS */
   --big-font: 5rem;
@@ -84,7 +85,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--alt-main-color);
+  background: var(--main-2-color);
 }
 
 body.scrollbar-top::-webkit-scrollbar-thumb {
@@ -105,7 +106,7 @@ body.scrollbar-bottom::-webkit-scrollbar-thumb {
 
 .navbar_color {
   background: var(--navbar-color);
-  box-shadow: 0px 0px 100px -30px var(--text-color);
+  box-shadow: 0px 0px 100px -30px var(--text-1-color);
 }
 
 .navbar_separator {
@@ -116,7 +117,7 @@ body.scrollbar-bottom::-webkit-scrollbar-thumb {
 
 .section {
   padding: var(--section-height) 15%;
-  color: var(--text-color);
+  color: var(--text-1-color);
 }
 
 .section_title {
@@ -124,7 +125,7 @@ body.scrollbar-bottom::-webkit-scrollbar-thumb {
 }
 
 .section_subtitle {
-  color: var(--alt-main-color);
+  color: var(--main-2-color);
 }
 
 .section div {
@@ -263,7 +264,7 @@ main .section:nth-child(6) {
 
 .login-register .button_1.active {
   background: var(--main-color);
-  color: var(--button-text-color);
+  color: var(--text-2-color);
 }
 
 /*SUBMENU*/
@@ -289,7 +290,7 @@ main .section:nth-child(6) {
 }
 
 .nav-sublist .nav-subitem:nth-child(n) a {
-  color: var(--text-color);
+  color: var(--text-1-color);
   background: var(--navbar-color);
   padding: 10px 20px 10px 10px;
   font-size: .9rem;
@@ -320,7 +321,7 @@ main .section:nth-child(6) {
 }
 
 .navbar-container .nav-sublist .nav-subitem a:hover {
-  color: var(--text-color);
+  color: var(--text-1-color);
 }
 
 .navbar-container .nav-sublist .nav-subitem:after {
@@ -481,7 +482,7 @@ main .section:nth-child(6) {
 
   .login-register .button_1.active {
     background: var(--main-color);
-    color: var(--button-text-color);
+    color: var(--text-2-color);
     transition: none;
   }
 
@@ -499,8 +500,8 @@ main .section:nth-child(6) {
   }
 
   .home-info_buttons .download-img:hover {
-    border: 2px solid var(--text-color);
-    box-shadow: 0px 0px 40px -10px var(--text-color);
+    border: 2px solid var(--text-1-color);
+    box-shadow: 0px 0px 40px -10px var(--text-1-color);
   }
 }
 
@@ -551,8 +552,8 @@ main .section:nth-child(6) {
 
 .download-img:hover {
   cursor: pointer;
-  border: 2px solid var(--text-color);
-  box-shadow: 0px 0px 20px 0px var(--text-color);
+  border: 2px solid var(--text-1-color);
+  box-shadow: 0px 0px 20px 0px var(--text-1-color);
 }
 
 .home-img {
@@ -693,7 +694,7 @@ main .section:nth-child(6) {
 #resume,
 #vac,
 #dev {
-  color: var(--text-color);
+  color: var(--text-1-color);
 }
 
 #resume {
@@ -806,7 +807,7 @@ main .section:nth-child(6) {
 
 .box-desc {
   line-height: 1.7;
-  color: var(--text-color);
+  color: var(--text-1-color);
   font-size: var(--h3-font);
   padding: 10px 15px;
 }
@@ -939,13 +940,12 @@ main .section:nth-child(6) {
 
 .form-login {
   width: 430px;
-  height: 450px;
+  height: 480px;
   position: absolute;
   margin: auto;
-  background-color: #f5faf4;
+  background-color: #ffffff;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: 30px;
 }
 
 .form-login .button-box .btn {
@@ -954,7 +954,7 @@ main .section:nth-child(6) {
   position: absolute;
   width: 130px;
   height: 100%;
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  background: linear-gradient(to right, var(--main-color), var(--main-color));
   border-radius: 30px;
   transition: .5s;
 }
@@ -1048,13 +1048,12 @@ main .section:nth-child(6) {
 
 /* ?===== REGISTER ======? */
 
-.Sing-in {
+.sign-in {
   font-size: 28px;
   font-weight: 600;
   color: #232836;
   text-align: center;
 }
-
 
 .form-box {
   width: 430px;
@@ -1071,8 +1070,12 @@ main .section:nth-child(6) {
   width: 260px;
   margin: 15px auto;
   position: relative;
-  box-shadow: 0 0 20px 9px #ff61241f;
+  box-shadow: 0 0 30px 0px var(--main-color);
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .nutritional-btn,
@@ -1091,7 +1094,7 @@ main .section:nth-child(6) {
   position: absolute;
   width: 130px;
   height: 100%;
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  background: linear-gradient(to right, var(--main-color), var(--main-color));
   border-radius: 30px;
   transition: .5s;
 }
@@ -1111,14 +1114,13 @@ main .section:nth-child(6) {
   border-left: 0;
   border-top: 0;
   border-right: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   outline: none;
   background: transparent;
   opacity: 0.60;
 }
 
 .input-field:hover {
-  border-bottom: 2px solid #000000;
   opacity: 1;
 }
 
@@ -1127,21 +1129,25 @@ main .section:nth-child(6) {
   padding: 10px 30px;
   cursor: pointer;
   display: block;
-  margin: auto;
-  background: linear-gradient(to right, #ff105f, #ffad06);
+  margin: 20px auto 0;
+  background: linear-gradient(to right, var(--main-color), var(--main-3-color));
   border: 0;
   outline: none;
   border-radius: 20px;
-  opacity: 0.6;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
 }
 
 .register-btn:hover {
-  opacity: 1;
+  background: linear-gradient(to right, var(--main-3-color), var(--main-color));
 }
 
 /*check box*/
 .check-box {
-  margin: 10px 10px 30px 0;
+  margin: 10px 10px 30 0;
 }
 
 /*son los espacios de los inputs del border del formulario*/
