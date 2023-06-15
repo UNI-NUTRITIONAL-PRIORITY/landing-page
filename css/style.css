@@ -7,6 +7,8 @@
   --text-1-color: #fff;
   --text-2-color: #000;
   --bg-1-color: #000;
+  --bg-2-color: #edfff4;
+  --bg-3-color: #d5ffe5;
   /* FONTS */
   --big-font: 5rem;
   --h1-font: 2rem;
@@ -922,9 +924,92 @@ main .section:nth-child(6) {
 
 /* *===== HITALO ======* */
 /* ?===== CONTACT ======? */
+#formcontact {
+  min-height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* *===== WILLY ======* */
-/* ?===== LOGIN ======? */
+.contact-section {
+  margin: 0 30px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #000;
+}
+
+.contact-form {
+  width: 45%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--bg-3-color);
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form h2 {
+  color: #fff;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--bg-3-color);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.contact-form button:hover {
+  background: var(--main-3-color);
+}
+
+@media (max-width: 768px) {
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+}
 
 /* *===== WILLY ======* */
 /* ?===== LOGIN ======? */
@@ -943,7 +1028,7 @@ main .section:nth-child(6) {
   height: 480px;
   position: absolute;
   margin: auto;
-  background-color: #ffffff;
+  background-color: var(--bg-2-color);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -1015,7 +1100,8 @@ main .section:nth-child(6) {
   height: 1px;
   width: 100%;
   margin: 10px 0;
-  background-color: #d4d4d4;
+  border-radius: 10px;
+  background: #cfffed;
 }
 
 .line::before {
@@ -1023,8 +1109,13 @@ main .section:nth-child(6) {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f5faf4;
-  color: #8b8b8b;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #cfffed;
+  color: #b3b3b3;
   padding: 0 15px;
 }
 
@@ -1038,12 +1129,29 @@ main .section:nth-child(6) {
 .facebook-icon,
 .google-icon,
 .linkedin-icon {
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
+  height: 10px;
+  width: 10px;
+  margin: 25px 20px;
   color: #0171d3;
   font-size: 20px;
   border-radius: 50%;
+  /*Centrarredessociales*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.facebook-icon:hover,
+.google-icon:hover,
+.linkedin-icon:hover {
+  cursor: pointer;
+  color: var(--main-color);
+
 }
 
 /* ?===== REGISTER ======? */
@@ -1060,7 +1168,7 @@ main .section:nth-child(6) {
   height: 580px;
   position: relative;
   margin: auto;
-  background-color: #f5faf4;
+  background-color: var(--bg-2-color);
   overflow: hidden;
   border-radius: 10px;
 
