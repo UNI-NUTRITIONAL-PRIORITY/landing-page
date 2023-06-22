@@ -17,8 +17,6 @@
   --h4-font: .8rem;
   /* NAVBAR */
   --navbar-color: rgb(0, 0, 0);
-  --nav-height: 90px;
-  --nav-separator: 90px;
   /* SECTIONS */
   --section-height: 80px;
   --section-1-color: transparent;
@@ -112,7 +110,7 @@ body.scrollbar-bottom::-webkit-scrollbar-thumb {
 }
 
 .navbar_separator {
-  height: var(--nav-separator);
+  height: 0;
 }
 
 /* SECTIONS */
@@ -140,7 +138,6 @@ main .section:nth-child(1) {
 
 main .section:nth-child(2) {
   background: var(--section-2-color);
-  padding: var(--section-height) 0;
 }
 
 main .section:nth-child(3) {
@@ -176,9 +173,9 @@ main .section:nth-child(6) {
   position: fixed;
   z-index: 10;
   padding: 0 2rem;
-  height: var(--nav-height);
+  height: 90px;
   align-items: center;
-  color: #fff;
+  color: var(--text-1-color);
   top: 0;
   width: 100%;
   transition: shadow .5s ease;
@@ -204,7 +201,7 @@ main .section:nth-child(6) {
 }
 
 .navbar-container .nav-list .nav-item a {
-  color: #fff;
+  color: var(--text-1-color);
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -214,6 +211,10 @@ main .section:nth-child(6) {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+}
+
+.login-register .button_1:hover {
+  color: var(--text-2-color);
 }
 
 .navbar-container .nav-list .nav-item:after {
@@ -298,14 +299,14 @@ main .section:nth-child(6) {
   font-size: .9rem;
 }
 
-.nav-sublist .nav-subitem a:hover {
-  color: var(--main-color);
-}
-
 .nav-sublist .nav-subitem a {
   width: 100%;
   display: inline-block;
   background: transparent;
+}
+
+.nav-sublist .nav-subitem a:hover {
+  color: var(--main-color);
 }
 
 .nav-sublist .nav-subitem:first-child a {
@@ -345,16 +346,23 @@ main .section:nth-child(6) {
 }
 
 .navbar-separator {
-  height: var(--nav-separator);
+  height: 0;
+}
+
+.nav-item a i,
+.nav-subitem a i,
+.login-register a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.nav-subitem a i {
+  color: #c9c9c9;
 }
 
 @media (max-width: 1680px) {}
 
 @media (max-width: 1024px) {
-
-  :root {
-    --nav-separator: 40px;
-  }
 
   .navbar-container {
     padding: 0 1rem;
@@ -374,7 +382,7 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 
   .navbar-container {
     justify-content: space-between;
@@ -384,7 +392,7 @@ main .section:nth-child(6) {
   .navbar-container .nav-list {
     flex-direction: column;
     position: fixed;
-    top: 70px;
+    top: 90px;
     width: 100vw;
     background: var(--bg-1-color);
     padding: 3rem 0;
@@ -434,7 +442,7 @@ main .section:nth-child(6) {
   .navbar-container .nav-list {
     flex-direction: column;
     position: fixed;
-    top: 70px;
+    top: 90px;
     width: 100vw;
     background: var(--bg-1-color);
     padding: 3rem 0;
@@ -513,7 +521,7 @@ main .section:nth-child(6) {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 850px;
+  min-height: 100vh;
 }
 
 .home-container {
@@ -570,7 +578,6 @@ main .section:nth-child(6) {
   #home {
     margin-top: 0;
     display: block;
-    min-height: 890px;
   }
 
   .home-container {
@@ -659,11 +666,11 @@ main .section:nth-child(6) {
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
+  color: yellow;
 }
 
 .bi {
   font-size: 24px;
-  color: yellow;
 }
 
 @media (max-width: 650px) {
@@ -925,14 +932,15 @@ main .section:nth-child(6) {
 /* *===== HITALO ======* */
 /* ?===== CONTACT ======? */
 #formcontact {
-  min-height: 850px;
+  min-height: 840px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 15%;
+  color: var(--text-1-color);
 }
 
 .contact-section {
-  margin: 0 30px;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -944,23 +952,54 @@ main .section:nth-child(6) {
 
 .contact-form {
   width: 45%;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .contact-info {
-  width: 45%;
+  width: 50%;
   height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
   background: var(--bg-3-color);
+}
+
+.contact-info div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contact-info .info-part {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.contact-info .info-part,
+.contact-info .info-part i {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info .info-part p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info .info-part p span {
+  font-weight: 700;
 }
 
 .contact-form h2,
 .contact-info h2 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.contact-info h2 {
+  align-self: center;
 }
 
 .contact-form h2 {
@@ -977,7 +1016,18 @@ main .section:nth-child(6) {
   background: var(--bg-3-color);
   width: 100%;
   padding: 10px;
-  box-sizing: border-box;
+}
+
+.contact-info,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
 }
 
 .contact-form textarea {
