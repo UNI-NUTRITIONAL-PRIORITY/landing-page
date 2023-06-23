@@ -339,6 +339,10 @@ main .section:nth-child(6) {
   transform: scaleY(0);
   transition: transform 250ms ease-in-out;
   transform-origin: top;
+  -webkit-transition: transform 250ms ease-in-out;
+  -moz-transition: transform 250ms ease-in-out;
+  -ms-transition: transform 250ms ease-in-out;
+  -o-transition: transform 250ms ease-in-out;
 }
 
 .navbar-container .nav-sublist .nav-subitem:hover:after {
@@ -596,6 +600,86 @@ main .section:nth-child(6) {
 
 /* *===== ANA MARIA ======* */
 /* ?===== HOME ======? */
+
+/* CHARACTERISTICS */
+
+
+
+/* Characteristics Section */
+.characteristics {
+  position: relative;
+  overflow: hidden;
+  background-color: #69dd65bb;
+  text-align: center;
+}
+
+.characteristics-container-1 h2 {
+  font-size: 32px;
+  font-family: cursive;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.characteristics-container-1 p {
+  margin-top: 25px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature {
+  width: 400px;
+  padding: 20px;
+  max-width: 100%;
+  min-height: 555px;
+  background-color: #494949;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .feature-div {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feature h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.feature p {
+  font-size: 16px;
+  font-weight: 350;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* TESTIMONIALS */
 
 #testimonials {
   display: flex;
@@ -1459,13 +1543,25 @@ main .section:nth-child(6) {
 @keyframes float {
   0% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 
   50% {
     transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
   }
 
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
