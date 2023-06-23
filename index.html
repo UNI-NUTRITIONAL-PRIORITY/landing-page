@@ -1,322 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutritional Priority</title>
-    <meta
-      name="description"
-      content="Te ayudamos a mantener una dieta equilibrada con la integración de IA"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/special_styles.css" />
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <!-- BOOTSTRAP ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/9c008fdc7d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <!-- JAVASCRIPT -->
-  <script
-    src="javascript/finisher-header.es5.min.js"
-    type="text/javascript"
-  ></script>
 
-  <body data-spy="scroll" class="background_animation">
-    <!-- HEADER -->
-    <header>
-      <nav class="navbar-container navbar_transparent">
-        <div class="logo-container">
-          <a href="index.html"
-            ><img class="logo" src="assets/img/logo.webp" alt="logo"
-          /></a>
-        </div>
-        <div class="bars">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item active">
-            <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
-            <ul class="nav-sublist">
-              <li class="nav-subitem">
-                <a href="index.html#home"
-                  ><i class="fa-solid fa-brain"></i>| CTA</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="index.html#characteristics"
-                  ><i class="fa-solid fa-code-pull-request"></i>|
-                  Características</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="index.html#targets"
-                  ><i class="fa-solid fa-crosshairs"></i>| Segmentos</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="index.html#testimonials"
-                  ><i class="fa-solid fa-comment-dots"></i>| Testimonios</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="index.html#plans"
-                  ><i class="fa-solid fa-star"></i>| Planes</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="index.html#footer"
-                  ><i class="fa-solid fa-copyright"></i>| Footer</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="about_us.html"
-              ><i class="fa-sharp fa-solid fa-people-group"></i>Nosotros</a
-            >
-            <ul class="nav-sublist">
-              <li class="nav-subitem">
-                <a href="about_us.html#resume"
-                  ><i class="fa-solid fa-circle-info"></i>| Resumen</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="about_us.html#vac"
-                  ><i class="fa-sharp fa-solid fa-scale-balanced"></i>| Valores
-                  y Cultura</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="about_us.html#dev"
-                  ><i class="fa-sharp fa-solid fa-people-group"></i>| Equipo de
-                  Desarrollo</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="about_us.html#footer"
-                  ><i class="fa-solid fa-copyright"></i>| Footer</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html"
-              ><i class="fa-solid fa-envelope-open-text"></i>Contacto</a
-            >
-            <ul class="nav-sublist">
-              <li class="nav-subitem">
-                <a href="contact.html"
-                  ><i class="fa-sharp fa-solid fa-envelope"></i>| Formulario</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="contact.html#socialmedia"
-                  ><i class="fa-brands fa-slack"></i>| Redes Sociales</a
-                >
-              </li>
-              <li class="nav-subitem">
-                <a href="contact.html#footer"
-                  ><i class="fa-solid fa-copyright"></i>| Footer</a
-                >
-              </li>
-            </ul>
-          </li>
-          <div class="login-register">
-            <a href="login.html" class="button_1"
-              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceder</a
-            >
-            <a href="register.html" class="button_1"
-              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i
-              >Registrarse</a
-            >
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="navbar_separator"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutritional Priority</title>
+  <meta name="description" content="Te ayudamos a mantener una dieta equilibrada con la integración de IA" />
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/special_styles.css" />
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/9c008fdc7d.js" crossorigin="anonymous"></script>
+</head>
+<!-- JAVASCRIPT -->
+<script src="javascript/finisher-header.es5.min.js" type="text/javascript"></script>
 
-      <!-- HOME -->
-      <section class="section" id="home">
-        <div class="home-container">
-          <div class="home-info">
-            <h1 class="home-info_title">
-              ¡Gestiona tu alimentación fácil, sin esfuerzo con la tecnología!
-            </h1>
-            <p class="home-info_desc">
-              ¡Cuida tu cuerpo con inteligencia artificial! Utiliza nuestro
-              escáner para conocer los nutrientes de tus comidas al instante.
-              Descarga la aplicación ahora y gestiona tu alimentación
-              fácilmente!
-            </p>
-            <div class="home-info_buttons">
-              <!-- <a href="#" class="button_2">
+<body data-spy="scroll" class="background_animation">
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar-container navbar_transparent">
+      <div class="logo-container">
+        <a href="index.html"><img class="logo" src="assets/img/logo.webp" alt="logo" /></a>
+      </div>
+      <div class="bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item active">
+          <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+          <ul class="nav-sublist">
+            <li class="nav-subitem">
+              <a href="index.html#home"><i class="fa-solid fa-brain"></i>| CTA</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="index.html#characteristics"><i class="fa-solid fa-code-pull-request"></i>|
+                Características</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="index.html#targets"><i class="fa-solid fa-crosshairs"></i>| Segmentos</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="index.html#testimonials"><i class="fa-solid fa-comment-dots"></i>| Testimonios</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="index.html#plans"><i class="fa-solid fa-star"></i>| Planes</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="index.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="about_us.html"><i class="fa-sharp fa-solid fa-people-group"></i>Nosotros</a>
+          <ul class="nav-sublist">
+            <li class="nav-subitem">
+              <a href="about_us.html#resume"><i class="fa-solid fa-circle-info"></i>| Resumen</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="about_us.html#vac"><i class="fa-sharp fa-solid fa-scale-balanced"></i>| Valores
+                y Cultura</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="about_us.html#dev"><i class="fa-sharp fa-solid fa-people-group"></i>| Equipo de
+                Desarrollo</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="about_us.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i>Contacto</a>
+          <ul class="nav-sublist">
+            <li class="nav-subitem">
+              <a href="contact.html"><i class="fa-sharp fa-solid fa-envelope"></i>| Formulario</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="contact.html#socialmedia"><i class="fa-brands fa-slack"></i>| Redes Sociales</a>
+            </li>
+            <li class="nav-subitem">
+              <a href="contact.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
+            </li>
+          </ul>
+        </li>
+        <div class="login-register">
+          <a href="login.html" class="button_1"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceder</a>
+          <a href="register.html" class="button_1"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Registrarse</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="navbar_separator"></div>
+
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="home-container">
+        <div class="home-info">
+          <h1 class="section__title">
+            ¡Gestiona tu alimentación fácil, sin esfuerzo con la tecnología!
+          </h1>
+          <p class="home-info_desc">
+            ¡Cuida tu cuerpo con inteligencia artificial! Utiliza nuestro
+            escáner para conocer los nutrientes de tus comidas al instante.
+            Descarga la aplicación ahora y gestiona tu alimentación
+            fácilmente!
+          </p>
+          <div class="home-info_buttons">
+            <!-- <a href="#" class="button_2">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               Más Información
             </a> -->
-            </div>
-            <div class="home-info_buttons">
-              <img
-                class="download-img"
-                src="assets/img/googlePlayButton.webp"
-                alt=""
-              />
-              <img
-                class="download-img"
-                src="assets/img/appStoreButton.webp"
-                alt=""
-              />
-            </div>
+          </div>
+          <div class="home-info_buttons">
+            <img class="download-img" src="assets/img/googlePlayButton.webp" alt="" />
+            <img class="download-img" src="assets/img/appStoreButton.webp" alt="" />
           </div>
         </div>
-        <div class="home-container">
-          <div class="home-info">
-            <img
-              class="home-img"
-              src="assets/img/img5.webp"
-              alt="Imagen principal"
-            />
-          </div>
+      </div>
+      <div class="home-container">
+        <div class="home-info">
+          <img class="home-img" src="assets/img/img5.webp" alt="Imagen principal" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CHARACTERISTICS -->
-      <section class="section" id="characteristics">
-        <div class="characteristics-container-1">
-          <div>
-            <h2>Nuestros servicios</h2>
-            <br />
-            <div class="features-container">
-              <div class="feature">
-                <div class="feature-div">
-                  <img
-                    src="https://www.gundo.app/blog/wp-content/uploads/2023/02/MENU-SEMANAL-4.jpg"
-                    alt="Característica 1"
-                  />
-                  <h3>Planificación de comidas</h3>
-                  <p>
-                    Te ofrecemos planes de comidas personalizadas según tus
-                    necesidades y preferencias alimenticias
-                  </p>
-                </div>
+    <!-- CHARACTERISTICS -->
+    <section class="section" id="characteristics">
+      <div class="characteristics-container-1">
+        <div>
+          <h2 class="section__title">Nuestros servicios</h2>
+          <br />
+          <div class="features-container">
+            <div class="feature">
+              <div class="feature-div">
+                <img src="https://www.gundo.app/blog/wp-content/uploads/2023/02/MENU-SEMANAL-4.jpg"
+                  alt="Característica 1" />
+                <h3>Planificación de comidas</h3>
+                <p>
+                  Te ofrecemos planes de comidas personalizadas según tus
+                  necesidades y preferencias alimenticias
+                </p>
               </div>
-              <div class="feature">
-                <div class="feature-div">
-                  <img
-                    src="https://nutricionenlared.com/web/wp-content/uploads/2013/07/Journal.jpg"
-                    alt="Característica 2"
-                  />
-                  <h3>Consejos de nutrición</h3>
-                  <p>
-                    Puedes llevar un seguimiento de los alimentos que consumes y
-                    recibir recomendaciones para mejorar tu dieta
-                  </p>
-                </div>
+            </div>
+            <div class="feature">
+              <div class="feature-div">
+                <img src="https://nutricionenlared.com/web/wp-content/uploads/2013/07/Journal.jpg"
+                  alt="Característica 2" />
+                <h3>Consejos de nutrición</h3>
+                <p>
+                  Puedes llevar un seguimiento de los alimentos que consumes y
+                  recibir recomendaciones para mejorar tu dieta
+                </p>
               </div>
-              <div class="feature">
-                <div class="feature-div">
-                  <img
-                    src="https://consejonutricion.files.wordpress.com/2014/02/etiqueta-alimentos-599-usa.jpg"
-                    alt="Característica 3"
-                  />
-                  <h3>Información nutricional</h3>
-                  <p>
-                    Accede a una amplia base de datos de alimentos y conoce su
-                    información nutricional y beneficios de manera detallada.
-                  </p>
-                </div>
+            </div>
+            <div class="feature">
+              <div class="feature-div">
+                <img src="https://consejonutricion.files.wordpress.com/2014/02/etiqueta-alimentos-599-usa.jpg"
+                  alt="Característica 3" />
+                <h3>Información nutricional</h3>
+                <p>
+                  Accede a una amplia base de datos de alimentos y conoce su
+                  información nutricional y beneficios de manera detallada.
+                </p>
               </div>
-              <div class="feature">
-                <div class="feature-div">
-                  <img
-                    src="https://acortar.link/EoBsJW"
-                    alt="Característica 4"
-                  />
-                  <h3>Recetas saludables</h3>
-                  <p>
-                    Explora nuestra variedad de recetas saludables, encuentra
-                    platos de comidas deliciosas y nutritivas para tu dieta.
-                  </p>
-                </div>
+            </div>
+            <div class="feature">
+              <div class="feature-div">
+                <img src="https://acortar.link/EoBsJW" alt="Característica 4" />
+                <h3>Recetas saludables</h3>
+                <p>
+                  Explora nuestra variedad de recetas saludables, encuentra
+                  platos de comidas deliciosas y nutritivas para tu dieta.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="characteristics-container-2">
-          <div></div>
-        </div>
-      </section>
+      </div>
+      <div class="characteristics-container-2">
+        <div></div>
+      </div>
+    </section>
 
-      <!-- TARGETS -->
-      <section class="section grid" id="targets">
+    <!-- TARGETS -->
+    <section class="section" id="targets">
+      <div class="targets-containter-0 flex">
+        <h2 class="section__title">Segmentos objetivos</h2>
+      </div>
+      <div class="grid">
         <div class="targets-container-1 flex">
-          <div><p>hola1</p></div>
+          <div>
+            <h3 class="targets_name">Jovenes Universitarios</h3>
+            <div class="targets_img flex">
+              <img src="assets/img/universitary.jpg" alt="">
+            </div>
+            <p class="targets_text">¿Quieres mejorar tu salud y transformar tu estilo de vida? Nuestra App móvil está
+              diseñada especialmente
+              para jóvenes y adolescentes universitarios como tú. Sabemos lo ocupados que pueden ser tus días, por eso
+              te ofrecemos un enfoque personalizado en los alimentos. Con planes de comidas adaptados a tus necesidades
+              individuales, recomendaciones basadas en una inteligencia artificial de vanguardia y un seguimiento
+              detallado de tu progreso, nuestra App te ayudará a tomar el control de tu alimentación y alcanzar tus
+              objetivos. Descubre una experiencia interactiva y personalizable que te permitirá llevar un estilo de vida
+              saludable de manera práctica y sencilla.</p>
+          </div>
         </div>
         <div class="targets-container-2 flex">
-          <div><p>hola2</p></div>
+          <div>
+            <h3 class="targets_name">Nutricionistas</h3>
+            <div class="targets_img flex">
+              <img src="assets/img/nutritionist.jpg" alt="">
+            </div>
+            <p class="targets_text">¿Eres un nutricionista apasionado por ayudar a las personas a alcanzar sus metas de
+              salud y bienestar? Nuestra App móvil es la herramienta perfecta para ti. Te brindamos la posibilidad de
+              ofrecer asesoramiento especializado a aquellos que necesitan una guía nutricional confiable. Al utilizar
+              nuestro software inteligente basado en algoritmos de IA, podrás analizar las necesidades individuales de
+              tus
+              clientes y bríndales recomendaciones precisas y un seguimiento
+              exhaustivo de su progreso. Además, podrás generar ingresos adicionales al ofrecer tus servicios a través
+              de nuestra plataforma. Únete a nosotros y brinda un apoyo para aquellos que buscan mejorar su estilo de
+              vida.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TESTIMONIALS -->
-      <section class="section" id="testimonials">
-        <h1 class="testimonials-title">Testimonios de usuarios</h1>
-        <p class="testimonials-parrafo">
-          Los testimonios de tus usuarios son extremadamente positivos y
-          resaltan los beneficios y ventajas de la aplicación. Los usuarios
-          expresan su satisfacción con la capacidad de personalizar planes
-          alimenticios, recibir recomendaciones confiables y mejorar su salud y
-          apariencia física. También destacan la utilidad de la app para
-          mantener una alimentación saludable en situaciones ocupadas como la
-          vida universitaria. Además, los profesionales de la salud valoran la
-          oportunidad de ofrecer su experiencia y generar ingresos adicionales a
-          través de la aplicación. En resumen, los testimonios son reseñas muy
-          positivas.
-        </p>
-        <div class="testimonials-container">
-          <div class="testimonials-item">
-            <div>
-              <div class="testimonials-photos">
-                <img
-                  class="testimonials-photo"
-                  src="assets/img/profile1.webp"
-                  alt="Perfil de Testimonio 1"
-                />
-              </div>
-              <h2>Veronica</h2>
-              <i class="bi bi-google-play"></i>
-              <h4>@veronicahannco</h4>
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <h1 class="section__title">Testimonios de usuarios</h1>
+      <p class="testimonials-parrafo">
+        Los testimonios de tus usuarios son extremadamente positivos y
+        resaltan los beneficios y ventajas de la aplicación. Los usuarios
+        expresan su satisfacción con la capacidad de personalizar planes
+        alimenticios, recibir recomendaciones confiables y mejorar su salud y
+        apariencia física. También destacan la utilidad de la app para
+        mantener una alimentación saludable en situaciones ocupadas como la
+        vida universitaria. Además, los profesionales de la salud valoran la
+        oportunidad de ofrecer su experiencia y generar ingresos adicionales a
+        través de la aplicación. En resumen, los testimonios son reseñas muy
+        positivas.
+      </p>
+      <div class="testimonials-container">
+        <div class="testimonials-item">
+          <div>
+            <div class="testimonials-photos">
+              <img class="testimonials-photo" src="assets/img/profile1.webp" alt="Perfil de Testimonio 1" />
+            </div>
+            <h2>Veronica</h2>
+            <i class="bi bi-google-play"></i>
+            <h4>@veronicahannco</h4>
+            <p>
+              Esta app ha cambiado por completo mi forma de comer. Gracias a
+              su plan alimenticio personalizado y las recomendaciones basadas
+              en fuentes confiables, he logrado mejorar mi salud y apariencia
+              física. En solo tres meses, he visto resultados sorprendentes y
+              me siento más segura de mí misma. ¡La recomendaría a todos mis
+              amigos sin dudarlo!"
+            </p>
+            <div class="estrellas">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-item">
+          <div>
+            <div class="testimonials-photos">
+              <img class="testimonials-photo" src="assets/img/profile2.webp" alt="Perfil de Testimonio 2" />
+            </div>
+            <div class="testimonials-info">
+              <h2>Eddy</h2>
+              <h4>@eddycastañeda</h4>
               <p>
-                Esta app ha cambiado por completo mi forma de comer. Gracias a
-                su plan alimenticio personalizado y las recomendaciones basadas
-                en fuentes confiables, he logrado mejorar mi salud y apariencia
-                física. En solo tres meses, he visto resultados sorprendentes y
-                me siento más segura de mí misma. ¡La recomendaría a todos mis
-                amigos sin dudarlo!"
+                Estoy realmente agradecido por esta app. Durante mi tiempo en
+                la universidad, mi alimentación se había descuidado, pero con
+                la ayuda de esta app he aprendido a comer de manera saludable
+                y equilibrada. Me ha proporcionado ideas de comidas rápidas y
+                saludables, y ahora me siento más enérgico y concentrado en
+                mis estudios. Es una herramienta imprescindible para cualquier
+                estudiante ocupado.
               </p>
               <div class="estrellas">
                 <i class="bi bi-star-fill"></i>
@@ -327,205 +307,138 @@
               </div>
             </div>
           </div>
-          <div class="testimonials-item">
-            <div>
-              <div class="testimonials-photos">
-                <img
-                  class="testimonials-photo"
-                  src="assets/img/profile2.webp"
-                  alt="Perfil de Testimonio 2"
-                />
-              </div>
-              <div class="testimonials-info">
-                <h2>Eddy</h2>
-                <h4>@eddycastañeda</h4>
-                <p>
-                  Estoy realmente agradecido por esta app. Durante mi tiempo en
-                  la universidad, mi alimentación se había descuidado, pero con
-                  la ayuda de esta app he aprendido a comer de manera saludable
-                  y equilibrada. Me ha proporcionado ideas de comidas rápidas y
-                  saludables, y ahora me siento más enérgico y concentrado en
-                  mis estudios. Es una herramienta imprescindible para cualquier
-                  estudiante ocupado.
-                </p>
-                <div class="estrellas">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="testimonials-item">
-            <div>
-              <div class="testimonials-photos">
-                <img
-                  class="testimonials-photo"
-                  src="assets/img/profile4.webp"
-                  alt="Perfil de Testimonio 4"
-                />
-              </div>
-              <div class="testimonials-info">
-                <h2>Rogger</h2>
-                <h4>@roggerquiñones</h4>
-                <p>
-                  Como nutricionista, puedo decir con confianza que esta app es
-                  una herramienta excepcional. Me permite crear planes
-                  alimenticios adaptados a las necesidades y preferencias de mis
-                  clientes, respaldados por la inteligencia artificial y fuentes
-                  confiables. También me brinda la oportunidad de ofrecer mi
-                  experiencia a través de la app, generando ingresos
-                  adicionales. Es una solución integral que beneficia tanto a
-                  los usuarios como a los profesionales de la salud.
-                </p>
-                <div class="estrellas">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                </div>
+        <div class="testimonials-item">
+          <div>
+            <div class="testimonials-photos">
+              <img class="testimonials-photo" src="assets/img/profile4.webp" alt="Perfil de Testimonio 4" />
+            </div>
+            <div class="testimonials-info">
+              <h2>Rogger</h2>
+              <h4>@roggerquiñones</h4>
+              <p>
+                Como nutricionista, puedo decir con confianza que esta app es
+                una herramienta excepcional. Me permite crear planes
+                alimenticios adaptados a las necesidades y preferencias de mis
+                clientes, respaldados por la inteligencia artificial y fuentes
+                confiables. También me brinda la oportunidad de ofrecer mi
+                experiencia a través de la app, generando ingresos
+                adicionales. Es una solución integral que beneficia tanto a
+                los usuarios como a los profesionales de la salud.
+              </p>
+              <div class="estrellas">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PLANS -->
-      <section class="section" id="plans">
-        <div class="plans-container-1">
-          <div></div>
-        </div>
-        <div class="plans-container-2">
-          <div></div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer" id="footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h4>Lenguaje</h4>
-          <select name="language" class="combobox border_hover">
-            <option value="spanish" selected>Español</option>
-            <option value="english">Inglés</option>
-            <option value="russaian">Ruso</option>
-          </select>
-          <br />
-          <h4>Redes Sociales</h4>
-          <div class="footer-social">
-            <ul>
-              <li>
-                <a href="https://facebook.com"
-                  ><i class="bi bi-facebook color_hover"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com"
-                  ><i class="bi bi-twitter color_hover"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://instagram.com"
-                  ><i class="bi bi-instagram color_hover"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-section">
-          <div>
-            <a href="#" class="footer-title">
-              <h4 class="color_hover">Inicio</h4>
-            </a>
-            <ul>
-              <li>
-                <a href="index.html#home" class="footer-item color_hover"
-                  >CTA</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#characteristics"
-                  class="footer-item color_hover"
-                  >Características</a
-                >
-              </li>
-              <li>
-                <a href="index.html#targets" class="footer-item color_hover"
-                  >Segmentos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#testimonials"
-                  class="footer-item color_hover"
-                  >Testimonios</a
-                >
-              </li>
-              <li>
-                <a href="index.html#plans" class="footer-item color_hover"
-                  >Planes</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-section">
-          <div>
-            <a href="#" class="footer-title">
-              <h4 class="color_hover">Nosotros</h4>
-            </a>
-            <ul>
-              <li>
-                <a href="about_us.html#resume" class="footer-item color_hover"
-                  >Resumen</a
-                >
-              </li>
-              <li>
-                <a href="about_us.html#vac" class="footer-item color_hover"
-                  >Valores</a
-                >
-              </li>
-              <li>
-                <a href="about_us.html#dev" class="footer-item color_hover"
-                  >Desarrolladores</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-section">
-          <div>
-            <a href="#" class="footer-title">
-              <h4 class="color_hover">Contacto</h4>
-            </a>
-            <ul>
-              <li>
-                <a
-                  href="contact.html#formcontact"
-                  class="footer-item color_hover"
-                  >Formulario</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html#socialmedia"
-                  class="footer-item color_hover"
-                  >Redes Sociales</a
-                >
-              </li>
-            </ul>
-          </div>
+    <!-- PLANS -->
+    <section class="section" id="plans">
+      <div class="plans-container-1">
+        <div></div>
+      </div>
+      <div class="plans-container-2">
+        <div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Lenguaje</h4>
+        <select name="language" class="combobox border_hover">
+          <option value="spanish" selected>Español</option>
+          <option value="english">Inglés</option>
+          <option value="russaian">Ruso</option>
+        </select>
+        <br />
+        <h4>Redes Sociales</h4>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://facebook.com"><i class="bi bi-facebook color_hover"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="bi bi-twitter color_hover"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="bi bi-instagram color_hover"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copy">
-        <p>&copy; 2023 Los Gatitos. Todos los derechos reservados al Grupo 1</p>
+      <div class="footer-section">
+        <div>
+          <a href="#" class="footer-title">
+            <h4 class="color_hover">Inicio</h4>
+          </a>
+          <ul>
+            <li>
+              <a href="index.html#home" class="footer-item color_hover">CTA</a>
+            </li>
+            <li>
+              <a href="index.html#characteristics" class="footer-item color_hover">Características</a>
+            </li>
+            <li>
+              <a href="index.html#targets" class="footer-item color_hover">Segmentos</a>
+            </li>
+            <li>
+              <a href="index.html#testimonials" class="footer-item color_hover">Testimonios</a>
+            </li>
+            <li>
+              <a href="index.html#plans" class="footer-item color_hover">Planes</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer-section">
+        <div>
+          <a href="#" class="footer-title">
+            <h4 class="color_hover">Nosotros</h4>
+          </a>
+          <ul>
+            <li>
+              <a href="about_us.html#resume" class="footer-item color_hover">Resumen</a>
+            </li>
+            <li>
+              <a href="about_us.html#vac" class="footer-item color_hover">Valores</a>
+            </li>
+            <li>
+              <a href="about_us.html#dev" class="footer-item color_hover">Desarrolladores</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div>
+          <a href="#" class="footer-title">
+            <h4 class="color_hover">Contacto</h4>
+          </a>
+          <ul>
+            <li>
+              <a href="contact.html#formcontact" class="footer-item color_hover">Formulario</a>
+            </li>
+            <li>
+              <a href="contact.html#socialmedia" class="footer-item color_hover">Redes Sociales</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2023 Los Gatitos. Todos los derechos reservados al Grupo 1</p>
+    </div>
+  </footer>
+</body>
+
 </html>
 <!-- JAVASCRIPT -->
 <script src="javascript/script.js" type="text/javascript"></script>

@@ -364,8 +364,7 @@ main .section:nth-child(6) {
   color: #c9c9c9;
 }
 
-@media (max-width: 1680px) {
-}
+@media (max-width: 1680px) {}
 
 @media (max-width: 1024px) {
   .navbar-container {
@@ -537,8 +536,7 @@ main .section:nth-child(6) {
   text-align: center;
 }
 
-.home-info_title {
-  color: var(--main-color);
+#home .section__title {
   margin: 25px 0;
 }
 
@@ -595,21 +593,12 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 650px) {
-}
+@media (max-width: 650px) {}
 
 /* *===== ANA MARIA ======* */
 /* ?===== HOME ======? */
 
 /* CHARACTERISTICS */
-
-/* Characteristics Section */
-.characteristics {
-  position: relative;
-  overflow: hidden;
-  background-color: #69dd65bb;
-  text-align: center;
-}
 
 .features-container {
   display: flex;
@@ -646,7 +635,7 @@ main .section:nth-child(6) {
   object-fit: cover;
 }
 
-.characteristics-container-1 h2 {
+.section__title {
   font-size: 32px;
   font-family: cursive;
   font-weight: 800;
@@ -670,16 +659,43 @@ main .section:nth-child(6) {
   color: #ffffff;
 }
 
+/* TARGETS */
+.targets_name {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.targets_img {
+  width: 100%;
+}
+
+.targets_img img {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.targets_text {
+  text-align: center;
+  margin: 0 30px
+}
+
+.targets-containter-0 {
+  margin-bottom: 50px;
+  color: var(--main-color);
+}
+
+
+
 /* TESTIMONIALS */
 
 #testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.testimonials-title {
-  color: var(--main-color);
 }
 
 .testimonials-parrafo {
@@ -749,10 +765,6 @@ main .section:nth-child(6) {
 }
 
 @media (max-width: 650px) {
-  .testimonials-title {
-    text-align: center;
-  }
-
   .testimonials-parrafo {
     text-align: center;
   }
@@ -934,6 +946,7 @@ main .section:nth-child(6) {
 }
 
 @media (max-width: 1350px) {
+
   .home,
   .resume {
     grid-template-columns: 1fr;
@@ -980,10 +993,10 @@ main .section:nth-child(6) {
   }
 }
 
-@media (max-width: 960px) {
-}
+@media (max-width: 960px) {}
 
 @media (max-width: 720px) {
+
   .home,
   .resume {
     grid-template-columns: 1fr;
@@ -1134,6 +1147,7 @@ main .section:nth-child(6) {
 }
 
 @media (max-width: 768px) {
+
   .contact-form,
   .contact-info {
     width: 100%;
