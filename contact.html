@@ -1,211 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritional Priority</title>
+    <meta
+      name="description"
+      content="Te ayudamos a mantener una dieta equilibrada con la integración de IA"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/special_styles.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/9c008fdc7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- JAVASCRIPT -->
+  <script
+    src="javascript/finisher-header.es5.min.js"
+    type="text/javascript"
+  ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nutritional Priority</title>
-  <meta name="description" content="Te ayudamos a mantener una dieta equilibrada con la integración de IA" />
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/special_styles.css" />
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <!-- BOOTSTRAP ICONS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <!-- FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/9c008fdc7d.js" crossorigin="anonymous"></script>
-</head>
-<!-- JAVASCRIPT -->
-<script src="javascript/finisher-header.es5.min.js" type="text/javascript"></script>
-
-<body class="background_animation">
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar-container navbar_transparent">
-      <div class="logo-container">
-        <a href="index.html"><img class="logo" src="assets/img/logo.webp" alt="logo" /></a>
-      </div>
-      <div class="bars">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="nav-list">
-        <li class="nav-item active">
-          <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
-          <ul class="nav-sublist">
-            <li class="nav-subitem">
-              <a href="index.html#home"><i class="fa-solid fa-brain"></i>| CTA</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="index.html#characteristics"><i class="fa-solid fa-code-pull-request"></i>|
-                Características</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="index.html#targets"><i class="fa-solid fa-crosshairs"></i>| Segmentos</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="index.html#testimonials"><i class="fa-solid fa-comment-dots"></i>| Testimonios</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="index.html#plans"><i class="fa-solid fa-star"></i>| Planes</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="index.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="about_us.html"><i class="fa-sharp fa-solid fa-people-group"></i>Nosotros</a>
-          <ul class="nav-sublist">
-            <li class="nav-subitem">
-              <a href="about_us.html#resume"><i class="fa-solid fa-circle-info"></i>| Resumen</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="about_us.html#vac"><i class="fa-sharp fa-solid fa-scale-balanced"></i>| Valores
-                y Cultura</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="about_us.html#dev"><i class="fa-sharp fa-solid fa-people-group"></i>| Equipo de
-                Desarrollo</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="about_us.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html"><i class="fa-solid fa-envelope-open-text"></i>Contacto</a>
-          <ul class="nav-sublist">
-            <li class="nav-subitem">
-              <a href="contact.html"><i class="fa-sharp fa-solid fa-envelope"></i>| Formulario</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="contact.html#socialmedia"><i class="fa-brands fa-slack"></i>| Redes Sociales</a>
-            </li>
-            <li class="nav-subitem">
-              <a href="contact.html#footer"><i class="fa-solid fa-copyright"></i>| Footer</a>
-            </li>
-          </ul>
-        </li>
-        <div class="login-register">
-          <a href="login.html" class="button_1"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceder</a>
-          <a href="register.html" class="button_1"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Registrarse</a>
+  <body class="background_animation">
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar-container navbar_transparent">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img class="logo" src="assets/img/logo.webp" alt="logo"
+          /></a>
         </div>
-      </ul>
-    </nav>
-  </header>
-  <main>
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="index.html#home"
+                  ><i class="fa-solid fa-brain"></i>| CTA</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#characteristics"
+                  ><i class="fa-solid fa-code-pull-request"></i>|
+                  Características</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#targets"
+                  ><i class="fa-solid fa-crosshairs"></i>| Segmentos</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#testimonials"
+                  ><i class="fa-solid fa-comment-dots"></i>| Testimonios</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#plans"
+                  ><i class="fa-solid fa-star"></i>| Planes</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="about_us.html"
+              ><i class="fa-sharp fa-solid fa-people-group"></i>Nosotros</a
+            >
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="about_us.html#resume"
+                  ><i class="fa-solid fa-circle-info"></i>| Resumen</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#vac"
+                  ><i class="fa-sharp fa-solid fa-scale-balanced"></i>| Valores
+                  y Cultura</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#dev"
+                  ><i class="fa-sharp fa-solid fa-people-group"></i>| Equipo de
+                  Desarrollo</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope-open-text"></i>Contacto</a
+            >
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="contact.html"
+                  ><i class="fa-sharp fa-solid fa-envelope"></i>| Formulario</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="contact.html#socialmedia"
+                  ><i class="fa-brands fa-slack"></i>| Redes Sociales</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="contact.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <div class="login-register">
+            <a href="login.html" class="button_1"
+              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceder</a
+            >
+            <a href="register.html" class="button_1"
+              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i
+              >Registrarse</a
+            >
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="navbar-separator"></div>
 
-    <div class="navbar-separator"></div>
-
-    <!-- FORM CONTACT -->
-    <section class="section" id="formcontact">
-      <section class="contact-section">
-        <div class="contact-info">
-          <div>
-            <h2>Información de Contacto</h2>
-            <div class="info-part">
-              <i class="bi bi-geo-alt-fill"></i>
-              <p><span>Dirección:</span> Av. Alameda San Marcos 11, Chorrillos 15067</p>
-            </div>
-            <div class="info-part"><i class="bi bi-telephone-fill"></i>
-              <p><span>Teléfono:</span> +51 925837182</p>
-            </div>
-            <div class="info-part">
-              <i class="bi bi-envelope-fill"></i>
-              <p><span>Email:</span> np4a@losgatitos.com</p>
+      <!-- FORM CONTACT -->
+      <section class="section" id="formcontact">
+        <section class="contact-section">
+          <div class="contact-info">
+            <div>
+              <h2>Información de Contacto</h2>
+              <div class="info-part">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p>
+                  <span>Dirección:</span> Av. Alameda San Marcos 11, Chorrillos
+                  15067
+                </p>
+              </div>
+              <div class="info-part">
+                <i class="bi bi-telephone-fill"></i>
+                <p><span>Teléfono:</span> +51 925837182</p>
+              </div>
+              <div class="info-part">
+                <i class="bi bi-envelope-fill"></i>
+                <p><span>Email:</span> np4a@losgatitos.com</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contact-form">
-          <h2>Contacto</h2>
-          <form>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo electrónico">
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+          <div class="contact-form">
+            <h2>Contacto</h2>
+            <form>
+              <input type="text" placeholder="Nombre" />
+              <input type="email" placeholder="Correo electrónico" />
+              <textarea placeholder="Mensaje"></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
       </section>
 
-    </section>
-
-    <!-- SOCIAL MEDIAS -->
-    <section class="section" id="socialmedia">
-    </section>
-
-  </main>
-  <!-- FOOTER -->
-  <footer class="footer" id="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Lenguaje</h4>
-        <select name="language" class="combobox border_hover">
-          <option value="spanish" selected>Español</option>
-          <option value="english">Inglés</option>
-          <option value="russaian">Ruso</option>
-        </select>
-        <br>
-        <h4>Redes Sociales</h4>
-        <div class="footer-social">
-          <ul>
-            <li><a href="https://facebook.com"><i class="bi bi-facebook color_hover"></i></a></li>
-            <li><a href="https://twitter.com"><i class="bi bi-twitter color_hover"></i></a></li>
-            <li><a href="https://instagram.com"><i class="bi bi-instagram color_hover"></i></a></li>
-          </ul>
+      <!-- SOCIAL MEDIAS -->
+      <section class="section" id="socialmedia"></section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Lenguaje</h4>
+          <select name="language" class="combobox border_hover">
+            <option value="spanish" selected>Español</option>
+            <option value="english">Inglés</option>
+            <option value="russaian">Ruso</option>
+          </select>
+          <br />
+          <h4>Redes Sociales</h4>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="https://facebook.com"
+                  ><i class="bi bi-facebook color_hover"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><i class="bi bi-twitter color_hover"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com"
+                  ><i class="bi bi-instagram color_hover"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Inicio</h4>
+            </a>
+            <ul>
+              <li>
+                <a href="index.html#home" class="footer-item color_hover"
+                  >CTA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#characteristics"
+                  class="footer-item color_hover"
+                  >Características</a
+                >
+              </li>
+              <li>
+                <a href="index.html#targets" class="footer-item color_hover"
+                  >Segmentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#testimonials"
+                  class="footer-item color_hover"
+                  >Testimonios</a
+                >
+              </li>
+              <li>
+                <a href="index.html#plans" class="footer-item color_hover"
+                  >Planes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Nosotros</h4>
+            </a>
+            <ul>
+              <li>
+                <a href="about_us.html#resume" class="footer-item color_hover"
+                  >Resumen</a
+                >
+              </li>
+              <li>
+                <a href="about_us.html#vac" class="footer-item color_hover"
+                  >Valores</a
+                >
+              </li>
+              <li>
+                <a href="about_us.html#dev" class="footer-item color_hover"
+                  >Desarrolladores</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Contacto</h4>
+            </a>
+            <ul>
+              <li>
+                <a
+                  href="contact.html#formcontact"
+                  class="footer-item color_hover"
+                  >Formulario</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html#socialmedia"
+                  class="footer-item color_hover"
+                  >Redes Sociales</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="footer-section">
-        <div>
-          <a href="#" class="footer-title">
-            <h4 class="color_hover">Inicio</h4>
-          </a>
-          <ul>
-            <li><a href="index.html#home" class="footer-item color_hover">CTA</a></li>
-            <li><a href="index.html#characteristics" class="footer-item color_hover">Características</a></li>
-            <li><a href="index.html#targets" class="footer-item color_hover">Segmentos</a></li>
-            <li><a href="index.html#testimonials" class="footer-item color_hover">Testimonios</a></li>
-            <li><a href="index.html#plans" class="footer-item color_hover">Planes</a></li>
-          </ul>
-        </div>
+      <div class="footer-copy">
+        <p>&copy; 2023 Los Gatitos. Todos los derechos reservados al Grupo 1</p>
       </div>
-      <div class="footer-section">
-        <div>
-          <a href="#" class="footer-title">
-            <h4 class="color_hover">Nosotros</h4>
-          </a>
-          <ul>
-            <li><a href="about_us.html#resume" class="footer-item color_hover">Resumen</a></li>
-            <li><a href="about_us.html#vac" class="footer-item color_hover">Valores</a></li>
-            <li><a href="about_us.html#dev" class="footer-item color_hover">Desarrolladores</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-section">
-        <div>
-          <a href="#" class="footer-title">
-            <h4 class="color_hover">Contacto</h4>
-          </a>
-          <ul>
-            <li><a href="contact.html#formcontact" class="footer-item color_hover">Formulario</a></li>
-            <li><a href="contact.html#socialmedia" class="footer-item color_hover">Redes Sociales</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy">
-      <p>&copy; 2023 Los Gatitos. Todos los derechos reservados al Grupo 1</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
 <!-- JAVASCRIPT -->
 <script src="javascript/script.js" type="text/javascript"></script>
